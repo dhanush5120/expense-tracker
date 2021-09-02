@@ -27,6 +27,9 @@ function App() {
 
   return (
     <div>
+      <center>
+        <h1 style={{ color: "white" }}>Track Your Expenses</h1>
+      </center>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
