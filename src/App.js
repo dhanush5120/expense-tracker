@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("expenseList", JSON.stringify(expenses));
-  });
+  }, [expenses]);
 
   return (
     <div>
