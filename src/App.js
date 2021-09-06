@@ -7,13 +7,13 @@ function App() {
     const saved = localStorage.getItem("expenseList");
     const initialValue = JSON.parse(saved);
     if (initialValue === null) {
-      return initialValue || [];
+      return [];
     } else {
       const savedExpenses = initialValue.map((expense) => {
         expense.date = new Date(expense.date);
         return expense;
       });
-      return savedExpenses || [];
+      return savedExpenses;
     }
   });
 
